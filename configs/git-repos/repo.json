@@ -1,0 +1,9 @@
+{
+    "kamilic-cn-darkroom": {
+        "git-repo": "git@github.com:kamilic/my-hexo-blog.git"
+    },
+
+    "kamilic-cn": {
+        "git-repo": "git@github.com:kamilic/kamilic-cn.git"
+    }
+}
