@@ -1,7 +1,4 @@
 #!/bin/bash
-echo "update apt.....";
-# update apt-get
-apt update;
 
 # install nginx
 echo "install nginx.....";
