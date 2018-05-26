@@ -1,5 +1,8 @@
 #!/bin/bash
 # will change to nodejs after.
+if [ ! -f projects ];
+then mkdir /home/kamilic-site/projects;
+fi
 
 cd /home/kamilic-site/projects;
 
