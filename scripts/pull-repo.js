@@ -34,9 +34,9 @@ function pullGitRepo({ folderName, url }) {
 		console.log(`change directory to ${targetPath}.`);
 		shelljs.cd(targetPath);
 		console.log(`now reset repo.`);
-		shelljs.exec('git reset HEAD --hard');
-		console.log(`now pull repo ${url}.`);
-		shelljs.exec(`git pull`);
+		shelljs.exec('git reset origin/master --hard');
+		// console.log(`now pull repo ${url}.`);
+		// shelljs.exec(`git pull -force`);
 	}
 
 	console.log('-------- end ---------');
