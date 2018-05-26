@@ -9,6 +9,6 @@ echo "nginx";
 nginx -s stop;
 nginx;
 
-cd ${relativePath}/server/;
+cd ${repoRootPath}/server/;
 npm run stop;
 npm run start;

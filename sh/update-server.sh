@@ -8,7 +8,7 @@ repoRootPath=$(pwd);
 echo "reload nginx";
 nginx -s reload;
 
-cd ${relativePath}/server/;
+cd ${repoRootPath}/server/;
 npm run stop;
 npm run start;
 
