@@ -4,5 +4,5 @@ echo "update apt.....";
 apt update;
 
 bash /home/kamilic-site/sh/set-nginx.sh;
-bash /home/kamilic-site/sh//set-node.sh;
+bash /home/kamilic-site/sh/set-node.sh;
 bash /home/kamilic-site/sh/clone-all-repos.sh;
