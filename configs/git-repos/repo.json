@@ -1,5 +1,6 @@
 {
     "kamilic-me-darkroom": {
-        "url": "git@github.com:kamilic/my-hexo-blog.git"
+        "url": "git@github.com:kamilic/my-hexo-blog.git",
+        "folderName": "kamilic-me-darkroom"
     }
 }

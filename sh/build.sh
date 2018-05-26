@@ -1,8 +1,18 @@
 #!/bin/bash
-echo "update apt.....";
+relativePath=$(dirname $0);
+cd ${relativePath}; # in /sh/
+absolutePath=$(pwd);
+cd ..;
+repoRootPath=$(pwd);
+
+echo "=-=-=-=-= update apt =-=-=-=-=";
 # update apt-get
 apt update;
 
-bash /home/kamilic-site/sh/set-nginx.sh;
-bash /home/kamilic-site/sh/set-node.sh;
-bash /home/kamilic-site/sh/clone-all-repos.sh;
+
+bash ${repoRootPath}/sh/set-nginx.sh;
+bash ${repoRootPath}/sh/set-node.sh;
+bash ${repoRootPath}/sh/clone-all-repos.sh;
+bash ${repoRootPath}/sh/install-dependencies.sh;
+
+echo '=-=-=-=-= done =-=-=-=-=';

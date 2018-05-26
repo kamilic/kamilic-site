@@ -1,0 +1,27 @@
+{
+  "name": "kamilic-site",
+  "version": "1.0.0",
+  "description": "kamilic.ms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilic/kamilic-site.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "kamilic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamilic/kamilic-site/issues"
+  },
+  "homepage": "https://github.com/kamilic/kamilic-site#readme",
+  "dependencies": {
+    "fs-extra": "^6.0.1",
+    "shelljs": "^0.8.2",
+    "yargs": "^11.0.0"
+  }
+}

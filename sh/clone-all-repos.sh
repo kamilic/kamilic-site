@@ -1,11 +1,18 @@
 #!/bin/bash
-# will change to nodejs after.
-if [ ! -f projects ];
-then mkdir /home/kamilic-site/projects;
-fi
+relativePath=$(dirname $0);
+cd ${relativePath}; # in /sh/
+absolutePath=$(pwd);
+cd ..;
+repoRootPath=$(pwd);
 
-cd /home/kamilic-site/projects;
+echo "=-=-=-=-= clone all projects repo =-=-=-=-=";
+mkdir -pv ${repoRootPath}/projects;
+node ${repoRootPath}/scripts/pull-repo.js --all;
 
-# git clone git@github.com:kamilic/kamilic-me.git kamilic-me;
-git clone git@github.com:kamilic/my-hexo-blog.git kamilic-me-darkroom;
+echo "=-=-=-=-= clone kamilic-site-server repo =-=-=-=-=";
+mkdir -pv ${repoRootPath}/server;
+cd ${repoRootPath}/server;
+git init;
+git remote add origin https://github.com/kamilic/kamilic-site-server;
+git pull origin master;
 
