@@ -33,6 +33,8 @@ function pullGitRepo({ folderName, url }) {
 		console.log(`${targetPath} do exists.`);
 		console.log(`change directory to ${targetPath}.`);
 		shelljs.cd(targetPath);
+		console.log(`now fetch all branch.`);
+		shelljs.exec('git fetch');
 		console.log(`now reset repo.`);
 		shelljs.exec('git reset origin/master --hard');
 		// console.log(`now pull repo ${url}.`);
