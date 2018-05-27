@@ -1,6 +1,6 @@
 # kamilic-site
 
-[kamilic.me](kamilic.me)  的文件目录结构仓库，包含
+[kamilic.me](http://kamilic.me)  的文件目录结构仓库，包含
 
 - 页面部署脚本
 - 配置文件
