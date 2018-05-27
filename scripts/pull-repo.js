@@ -5,6 +5,7 @@ const path = require('path');
 const argv = yargs.argv;
 const inputMode = argv.single ? 'single' : 'all';
 const inputRepoKey = argv.repoKey;
+const inputToken = argv.token;
 
 const rootPath = path.resolve(__filename, '../../');
 const projectsRootPath = path.join(rootPath, 'projects');
@@ -76,4 +77,8 @@ function run(repoKey, mode) {
 	}
 }
 
-run(inputRepoKey, inputMode);
+if (inputToken && inputToken == process.env.build_token) {
+	run(inputRepoKey, inputMode);
+} else {
+	throw Error('token 错误');
+}
