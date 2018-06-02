@@ -13,6 +13,7 @@ apt update;
 bash ${repoRootPath}/sh/set-nginx.sh;
 bash ${repoRootPath}/sh/set-node.sh;
 bash ${repoRootPath}/sh/clone-all-repos.sh;
+bash ${repoRootPath}/sh/update-server-repo.sh;
 bash ${repoRootPath}/sh/install-dependencies.sh;
 
 echo '=-=-=-=-= done =-=-=-=-=';
