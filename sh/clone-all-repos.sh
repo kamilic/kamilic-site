@@ -11,4 +11,4 @@ npm install;
 
 echo "=-=-=-=-= clone all projects repo =-=-=-=-=";
 mkdir -pv ${repoRootPath}/projects;
-node ${repoRootPath}/scripts/pull-repo.js --all;
+node ${repoRootPath}/scripts/pull-repo.js --all --local;

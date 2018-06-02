@@ -6,6 +6,7 @@ const argv = yargs.argv;
 const inputMode = argv.single ? 'single' : 'all';
 const inputRepoKey = argv.repoKey;
 const inputToken = argv.token;
+const inputLocal = argv.local;
 
 const rootPath = path.resolve(__filename, '../../');
 const projectsRootPath = path.join(rootPath, 'projects');
@@ -77,7 +78,7 @@ function run(repoKey, mode) {
 	}
 }
 
-if (inputToken && inputToken == process.env.build_token) {
+if ((inputToken && inputToken == process.env.build_token) || inputLocal) {
 	run(inputRepoKey, inputMode);
 } else {
 	throw Error('token 错误');
