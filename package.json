@@ -4,6 +4,8 @@
   "description": "kamilic.ms",
   "main": "index.js",
   "scripts": {
+    "build": "bash sh/build.sh",
+    "start": "bash sh/start-server.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
