@@ -11,7 +11,7 @@
 # set-env
 case "$1" in
         start)
-                export build_token='jef1314lic';
+                export build_token='';
                 export npm="/usr/bin/npm";
                 export ssserver="/usr/local/bin/ssserver";
                 cd /home/kamilic-site/;
