@@ -10,5 +10,5 @@
 ### END INIT INFO
 # set-env
 export build_token='';
-bash /home/kamilic-site/;
+cd /home/kamilic-site/;
 npm run start;
