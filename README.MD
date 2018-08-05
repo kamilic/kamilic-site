@@ -7,7 +7,7 @@
 
 # build
 ```bash
-cd /home/ && rm -rf kamilic-site && git clone https://github.com/kamilic/kamilic-site && npm run build;
+cd /home/ && rm -rf kamilic-site && git clone https://github.com/kamilic/kamilic-site && cd kamilic-site && npm run build;
 ```
 
 ### 目前的子项目
