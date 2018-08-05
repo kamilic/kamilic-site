@@ -15,5 +15,6 @@ bash ${repoRootPath}/sh/set-node.sh;
 bash ${repoRootPath}/sh/clone-all-repos.sh;
 bash ${repoRootPath}/sh/update-server-repo.sh;
 bash ${repoRootPath}/sh/install-dependencies.sh;
+bash ${repoRootPath}/sh/set-rc-local.sh;
 
 echo '=-=-=-=-= done =-=-=-=-=';
