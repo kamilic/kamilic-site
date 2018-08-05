@@ -11,4 +11,3 @@ cd ${repoRootPath}/server;
 git init;
 git remote add origin https://github.com/kamilic/kamilic-site-server;
 git pull origin master;
-
