@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "
-#!/bin/bash
+echo "#!/bin/bash
 ### BEGIN INIT INFO
 # Provides: kamilic
 # Required-Start: \$local_fs \$network  
@@ -11,7 +10,8 @@ echo "
 # Description: kamilic       
 ### END INIT INFO
 # set-env
-source build_token='';" > /etc/init.d/env;
+source build_token='';
+bash /home/kamilic-site/sh/start-server.sh" > /etc/init.d/env;
 
 vim /etc/init.d/env +;
 
