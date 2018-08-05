@@ -9,5 +9,4 @@ cat ${repoRootPath}/sh/running-script.sh > /etc/init.d/env;
 
 vim /etc/init.d/env +;
 
-chmod +x /etc/init.d/env;
-update-rc.d env defaults;
+chmod +x /etc/init.d/env 95;
