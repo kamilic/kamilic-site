@@ -5,6 +5,11 @@
 - 页面部署脚本
 - 配置文件
 
+# build
+```bash
+cd /home/ && git clone https://github.com/kamilic/kamilic-site && cd kamilic-site/sh && bash build.sh;
+```
+
 ### 目前的子项目
 
 - kamilic-site-server
